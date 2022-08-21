@@ -1,1 +1,17 @@
 <h1>Codeial <%= title %></h1>
+<section id="feed-post">
+  <form action="/posts/create" id="new-post-form" method="post">
+    <textarea name="content" id="" cols="30" rows="10"></textarea>
+    <input type="submit" value="Post" />
+  </form>
+</section>
+
+<div>
+    <% for(let post of posts){ %>
+        <div class="post">
+            <h3><%= post.content %></h3>
+            <div> <%= post.createdAt %></div>
+            <div><%=post.user.name %></div>
+        </div>
+    <% } %>
+</div>
