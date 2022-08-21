@@ -1,0 +1,22 @@
+#header {
+  background-color: aqua;
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  justify-content: space-between; }
+  #header #codieal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000; }
+  #header .header-items {
+    list-style: none;
+    font-size: 1.2rem; }
+  #header a {
+    text-decoration: none; }
+  #header .items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px; }

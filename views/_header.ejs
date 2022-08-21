@@ -1,4 +1,16 @@
-<header>
-    <h1>Header</h1>
-  </header>
-  
+<header id="header">
+  <h1 id="codieal-title">Codeial</h1>
+  <ul class="header-items">
+    <% if (locals.user) {%>
+    <div class="items">
+      <a href="/users/profile"><%= user.name %></a
+      ><a href="/users/sign-out">Sign Out</a>
+      </div>
+    <%} else {%>
+    <div class="items">
+      <a href="/users/sign-up">Sign Up</a>
+      <a href="/users/sign-in">Sign In</a>
+    </div>
+    <%}%>
+  </ul>
+</header>
