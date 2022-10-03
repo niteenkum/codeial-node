@@ -1,9 +1,15 @@
-<h1>Sign In </h1>
+<div class="sign-in-card">
+    <div class="sign-in-card-header"> 
+        <h1>SIGN IN</h1>
+        <p>Use your user name to sign</p>
+    </div>
+<div class="sign-in-card-body">
+<form class="form-group" action="/users/create-session" method="post">
 
-<form action="/users/create-session" method="post">
-
-    <input type="email" name="email" placeholder="email" required />
-    <input type="password" name="password" placeholder="password" required />
-    <button type="submit">Sign In</button>
+    <input class="input" type="email" name="email" placeholder="email" required />
+    <input class="input" type="password" name="password" placeholder="password" required />
+    <button class="button" type="submit">Sign In</button>
 
 </form>
+</div>
+</div>

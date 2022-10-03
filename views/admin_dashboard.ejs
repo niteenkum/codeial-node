@@ -1,0 +1,24 @@
+<div class="admin-dashboard">
+  <div class="employee-list">
+    <% for(let user of users){%>
+      <!-- <a style="display: block;" href="/admin/view_user/<%= user._id %>"> -->
+
+   
+    <div class="employee-card" onclick="location.href='/admin/view_user/<%= user._id %>'">
+       <!-- <div> <a class="delete-btn" href="/users/delete/<%= user._id %>">Delete</a></div> -->
+        <img class="avatar" src="/images/avatar.png" alt="">
+      <p><%= user?.name %></p>
+      <div class="designation"><%= user?.designation %></div>
+      <div class="employee-address-card">
+        <div class="heading"> Email</div>
+        <div class="value"><%= user?.email %></div>
+        <div class="heading"> Phone No.</div>
+        <div class="value"><%= user?.phone %></div>
+        <div class="heading"> Address</div>
+        <div class="value"><%= user?.address %></div>
+      </div>
+    </div>
+  <!-- </a> -->
+    <%}%>
+  </div>
+</div>

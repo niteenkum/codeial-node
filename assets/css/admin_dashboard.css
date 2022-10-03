@@ -1,0 +1,99 @@
+.admin-dashboard {
+  background-color: #F2F7FA;
+  margin-top: 30px; }
+  .admin-dashboard .employee-list {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh; }
+    .admin-dashboard .employee-list .employee-card {
+      margin: 20px;
+      margin-top: 25px;
+      height: 300px;
+      width: 220px;
+      font-size: 1rem;
+      background-color: #fff;
+      box-shadow: 9px 10px 35px #1e8bcb;
+      border-radius: 12px;
+      padding: 12px; }
+      .admin-dashboard .employee-list .employee-card .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 10px 0 10px 0;
+        box-shadow: #000000 0px 0px 19px 1px; }
+      .admin-dashboard .employee-list .employee-card p {
+        text-align: center;
+        font-size: 0.6rem;
+        color: #f8151580;
+        font-weight: bold; }
+      .admin-dashboard .employee-list .employee-card .designation {
+        text-align: center;
+        font-size: 0.8rem;
+        color: #000000;
+        font-weight: 600;
+        line-height: 0;
+        margin-bottom: 25px; }
+      .admin-dashboard .employee-list .employee-card .employee-address-card {
+        height: 120px;
+        background-color: #dce9f4;
+        border-radius: 12px;
+        text-align: left;
+        padding: 20px 0 0 10px; }
+        .admin-dashboard .employee-list .employee-card .employee-address-card .heading {
+          font-size: 0.8rem;
+          color: #000000;
+          font-weight: 600;
+          line-height: 0;
+          margin-bottom: 10px; }
+        .admin-dashboard .employee-list .employee-card .employee-address-card .value {
+          font-size: 0.8rem;
+          color: #6b6b6b;
+          font-weight: 400;
+          margin-bottom: 10px; }
+      .admin-dashboard .employee-list .employee-card .delete-btn {
+        padding: 9px;
+        width: 40px;
+        font-size: 0.7rem;
+        background-color: #37a6e7;
+        color: white;
+        border-radius: 8px; }
+      .admin-dashboard .employee-list .employee-card .delete-btn:hover {
+        transform: scale(1.05);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer; }
+    .admin-dashboard .employee-list .employee-card:hover {
+      box-shadow: 9px 10px 35px #000000;
+      transform: scale(1.05);
+      transition: all 1s ease-in-out;
+      cursor: pointer; }
+
+.admin-action-btn {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5;
+  width: 100%; }
+  .admin-action-btn .delete-btn {
+    padding: 9px;
+    font-size: 0.7rem;
+    margin: 10px 0 10px 0;
+    background-color: #d8e8f0;
+    box-shadow: #e1d4d4 0px 0px 19px 1px;
+    color: #ec0808;
+    border-radius: 8px; }
+  .admin-action-btn .delete-btn:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+    box-shadow: #ea0000 0px 0px 19px 1px;
+    cursor: pointer; }
+  .admin-action-btn .make-admin {
+    padding: 9px;
+    font-size: 0.7rem;
+    margin: 10px 0 10px 0;
+    background-color: #079aef;
+    box-shadow: #e1d4d4 0px 0px 19px 1px;
+    color: white;
+    border-radius: 8px; }
+  .admin-action-btn .make-admin:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer; }

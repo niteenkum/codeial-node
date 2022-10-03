@@ -13,6 +13,22 @@ const userSchecma = mongoose.Schema({
     name: {
         type: String,
         required: true
+    },
+    address: {
+        type: String,
+        required: true
+    },
+    phone: {
+        type: String,
+        required: true
+    },
+    designation: {
+        type: String,
+        required: true
+    },
+    role: {
+        type: String,
+        default: 'user'
     }
 }, {
     timestamps: true

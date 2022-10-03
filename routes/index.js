@@ -1,11 +1,12 @@
 const express = require("express");
 const router = express.Router();
-const homeController = require("../controllers/home_controller");
+const userController = require("../controllers/users_controller");
 
-router.get("/", homeController.home);
+router.get('/', userController.SignIn)
+
 router.use('/users', require("./users"));
-router.use('/posts', require("./posts"));
+router.use('/admin', require("./admin"));
 
 
-console.log("rouer file is loaded");
+
 module.exports = router;

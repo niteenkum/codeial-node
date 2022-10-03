@@ -1,0 +1,23 @@
+<h1>NORMAL USER DASHBOARD</h1>
+
+<div class="feedback-page">
+  Feed Back Required
+
+
+    <% for(let list of performances){ %>
+    <div class="feedback-detail">
+      <div class="feedback-requestor-name">
+        <h3><%= list.name %></h3>
+      </div>
+
+      <form class="feedback-form" action="/users/add-feedback/<%= list._id%>" method="post">
+        <label for="rating">Rating</label>
+        <input type="number" name="rating" min="0" max="10" required>
+        <label for="comment">Comment</label>
+        <input type="text" name="comment" required>
+        <button type="submit">Add Feedback</button>
+      </form>
+</div>
+      <% } %>
+    
+</div>

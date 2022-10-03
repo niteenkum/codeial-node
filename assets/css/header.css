@@ -1,22 +1,25 @@
 #header {
-  background-color: aqua;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
   display: flex;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 40px;
-  padding-right: 40px;
-  justify-content: space-between; }
-  #header #codieal-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #000; }
-  #header .header-items {
-    list-style: none;
-    font-size: 1.2rem; }
-  #header a {
-    text-decoration: none; }
+  justify-content: space-between;
+  padding: 0 10px 0 10px; }
+  #header #ers-title {
+    color: white;
+    font-size: 1.2rem;
+    line-height: 0rem; }
   #header .items {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px; }
+    display: flex; }
+    #header .items a {
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px; }
+      #header .items a:hover {
+        background-color: #ddd;
+        color: black; }

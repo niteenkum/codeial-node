@@ -1,0 +1,126 @@
+<div class="view-user-page">
+  <div class="sign-in-card">
+    <div class="sign-in-card-header">
+      <h1>Update / Delete</h1>
+      <p>Delete or Update user by using these prefilled data</p>
+    </div>
+    <div class="sign-in-card-body">
+      <form
+        class="form-group"
+        action="/admin/update-user/<%= user._id %>"
+        method="post"
+      >
+        <input
+          class="input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+          value="<%= user.name %>"
+        />
+        <input
+          class="input"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+          value="<%= user.email %>"
+        />
+        <input
+          class="input"
+          type="tel"
+          name="phone"
+          placeholder="Phone"
+          value="<%= user.phone %>"
+          required
+        />
+        <input
+          class="input"
+          type="text"
+          name="address"
+          placeholder="Address"
+          value="<%= user.address %>"
+          required
+        />
+        <input
+          class="input"
+          type="text"
+          name="designation"
+          placeholder="Designation"
+          value="<%= user.designation %>"
+          required
+        />
+        <input
+          class="input"
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+          hidden
+        />
+        <div class="admin-action-btn">
+          <div
+            class="delete-btn"
+            onclick="location.href='/admin/delete/<%= user._id %>'"
+          >
+            Delete
+          </div>
+          <div
+            class="make-admin"
+            onclick="location.href='/admin/make-admin/<%= user._id %>'"
+          >
+            Make Admin
+          </div>
+        </div>
+        <button class="button" type="submit">Update</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="reviewer-select">
+   
+    <% if(performance.length === 0){%>
+      <div class="reviewer-select-header">
+        <h1>Reviewer</h1>
+        <p>Select a reviewer from the list</p>
+      </div>
+    <div class="reviewer-select-body">
+      <form
+        class="form-group"
+        action="/admin/reviewer/<%= user._id %>"
+        method="post"
+      >
+        <select class="input" name="reviewer" id="reviewer">
+          <option value="" disabled selected>Select a reviewer</option>
+          <% for (let i = 0; i < users.length; i++) { %>
+          <option value="<%= users[i]._id %>"><%= users[i].name %></option>
+          <% } %>
+        </select>
+
+        <input type="text" name="name"  value="<%= user.name %>" hidden />
+        <button class="button" type="submit">Assign</button>
+      </form>
+    </div>
+    <%} else {%>
+      <div class="reviewer-select-header">
+        <p>Add / Update Feedback</p>
+      </div>
+      <form class="feedback-form" action="/users/add-feedback/<%= performance[0]._id%>" method="post">
+       <div> <label for="rating">Rating</label></div>
+       <div>
+        <input value="<%=performance[0].rating %>" type="number" name="rating" min="0" max="10" required>
+       </div>
+       <div>
+        <label for="comment">Comment</label>
+       </div>
+       <div>
+       <input type="text" value="<%= performance[0].comment %>" name="comment" required>
+       </div>
+        <button type="submit">Update / Add</button>
+      </form>
+      <%}%>
+    
+  </div>
+
+  <p><%= performance.comment %></p>
+</div>

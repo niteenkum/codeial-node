@@ -1,0 +1,42 @@
+.feedback-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%; }
+  .feedback-page .feedback-detail {
+    border: #000 1px solid;
+    border-radius: 0.5rem;
+    background: #09cfd0;
+    background: linear-gradient(186deg, #09cfd0 19%, #d2eaf1 51%);
+    width: 700px;
+    height: 150px;
+    margin: 20px; }
+    .feedback-page .feedback-detail .feedback-requestor-name {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #000;
+      margin-bottom: 0.5rem; }
+    .feedback-page .feedback-detail .feedback-form label {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #000;
+      margin-bottom: 0.5rem;
+      margin: 10px; }
+    .feedback-page .feedback-detail .feedback-form input {
+      border: 1px solid #000;
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      margin: 10px; }
+    .feedback-page .feedback-detail .feedback-form button {
+      border: 1px solid #000;
+      background-color: blueviolet;
+      color: white;
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      margin: 10px;
+      cursor: pointer; }
+    .feedback-page .feedback-detail .feedback-form button:hover {
+      background-color: blue; }

@@ -4,3 +4,127 @@ body {
   body #layout-main {
     width: 100%;
     height: 100%; }
+
+.sign-in-card {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 20px;
+  background: #09cfd0;
+  background: linear-gradient(186deg, #09cfd0 19%, #d2eaf1 51%);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  .sign-in-card .sign-in-card-header {
+    text-align: center;
+    margin-bottom: 20px; }
+    .sign-in-card .sign-in-card-header h1 {
+      font-size: 30px;
+      font-weight: 300;
+      margin-bottom: 5px; }
+    .sign-in-card .sign-in-card-header p {
+      font-size: 14px;
+      color: #fbf8f8; }
+  .sign-in-card .sign-in-card-body .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .sign-in-card .sign-in-card-body .form-group .label {
+      display: block;
+      margin-bottom: 5px; }
+    .sign-in-card .sign-in-card-body .form-group .input {
+      margin-top: 10px;
+      width: 70%;
+      height: 40px;
+      padding: 0 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      outline: none; }
+      .sign-in-card .sign-in-card-body .form-group .input:focus {
+        border-color: #999; }
+    .sign-in-card .sign-in-card-body .form-group .button {
+      margin-top: 10px;
+      width: 70%;
+      height: 40px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 300;
+      outline: none;
+      cursor: pointer; }
+      .sign-in-card .sign-in-card-body .form-group .button:hover {
+        background-color: #666; }
+
+.view-user-page {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .view-user-page .sign-in-card {
+    margin: 100px 50 0 0; }
+  .view-user-page .reviewer-select {
+    margin: 40px 40px 10px 0;
+    background: #8e2de2;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+    width: 300px;
+    color: white;
+    padding: 12px; }
+    .view-user-page .reviewer-select .input {
+      margin-top: 9px;
+      width: 300px;
+      height: 44px;
+      padding: 0 10px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      outline: none; }
+      .view-user-page .reviewer-select .input:focus {
+        border-color: #999; }
+    .view-user-page .reviewer-select .button {
+      margin-top: 12px;
+      background-color: #8e2de2;
+      border: #8e2de2 3px solid;
+      box-shadow: #666 0 0 10px;
+      border-radius: 12px;
+      width: 300px;
+      height: 32px;
+      color: white;
+      transform: perspective();
+      transition: background-color 0.5s;
+      transition-delay: 0.7s; }
+    .view-user-page .reviewer-select .button:hover {
+      cursor: pointer;
+      background-color: #4a00e0;
+      /* fallback for old browsers */
+      transition: background-color 2s ease-out; }
+
+.feedback-form label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.5rem;
+  margin: 10px; }
+
+.feedback-form input {
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin: 10px; }
+
+.feedback-form button {
+  border: 1px solid #000;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin: 10px;
+  cursor: pointer; }
+
+.feedback-form button:hover {
+  background-color: blue; }
